@@ -6,11 +6,12 @@ document.getElementById("highscore").innerHTML=highscore;
 var inputfrompage = document.querySelector('input');
 const btn = document.getElementById('check');
 btn.addEventListener('click',func);
+const randnum = Math.floor(Math.random()*100 + 1);
+// console.log("Random number is: " + randnum);
 //input is string
 function func(){
     input = inputfrompage.value;
     if (score!==0){
-        const randnum = Math.floor(Math.random()*100 + 1);
         if (input==="")
             alert("no input");
         else if (!isNaN(parseInt(input)))
