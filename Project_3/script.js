@@ -23,8 +23,9 @@ function func(){
                 score--;
             }
             else if (innum <randnum){
-                alert("Too low");
                 score--;
+                if (score!==0)
+                    alert("Too low");
             }
             else{
                 document.body.style.backgroundColor = "red";
@@ -38,5 +39,5 @@ function func(){
     }
     document.getElementById("score").innerHTML=score;
     if(score===0)
-        prompt("Sorry, the game is over");
+        alert("Sorry, the game is over");
 }
