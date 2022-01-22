@@ -4,10 +4,11 @@ document.getElementById("score").innerHTML=score;
 var highscore = 0;
 document.getElementById("highscore").innerHTML=highscore;
 var inputfrompage = document.querySelector('input');
-const btn = document.querySelector('button');
-btn.addEventListener('click',func(inputfrompage.value));
+const btn = document.getElementById('check');
+btn.addEventListener('click',func);
 //input is string
-function func(input){
+function func(){
+    input = inputfrompage.value;
     if (score!==0){
         const randnum = Math.floor(Math.random()*100 + 1);
         if (input==="")
