@@ -1,8 +1,8 @@
 "use strict;"
 var score = 10;
-document.getElementById("score").innerHTML(score);
+document.getElementById("score").innerHTML=score;
 var highscore = 0;
-document.getElementById("highscore").innerHTML(highscore);
+document.getElementById("highscore").innerHTML=highscore;
 var inputfrompage = document.querySelector('input');
 const btn = document.querySelector('button');
 btn.addEventListener('click',func(inputfrompage.value));
@@ -34,7 +34,7 @@ function func(input){
             }
         }
     }
-    document.getElementById("score").innerHTML(score);
+    document.getElementById("score").innerHTML=score;
     if(score===0)
         prompt("Sorry, the game is over");
 }
