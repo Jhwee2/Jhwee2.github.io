@@ -82,3 +82,14 @@ body{
 .smallbox h2{
     color: white;
 }
+
+.guesshistory{
+    background-color: #b6e9ea;
+    height: 100px;
+    width: 500px;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 2%;
+    left: 25%;
+    padding-left: 1%;
+}
