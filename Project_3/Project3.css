@@ -46,9 +46,10 @@ body{
     right: 2%;
 }
 
-.reset a{
-    text-decoration: none;
-    color: black;
+.reset button{
+    background: none!important;
+    border: none;
+    padding: 0!important;
 }
 
 .smallbox{
