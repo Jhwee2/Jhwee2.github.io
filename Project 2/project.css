@@ -1,0 +1,367 @@
+body{
+    background-color: #fffee0;
+}
+
+header{
+    height: 150px;
+    width: 100%;
+    background-color:#fffee0;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.head1{
+    height: 100%;
+    width: 10%;
+    box-sizing: border-box;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation: expansion 5s infinite;
+}
+
+@keyframes expansion {
+    0%{
+        transform: scale(50%);
+    }
+}
+
+.head2{
+    width: 90%;
+    margin-left: 1%;
+    flex-direction: column;
+    margin-top: 0%;
+}
+
+    
+
+
+.head2 h1{
+    height: 45%;
+    color: #838110;
+    font-family: cursive;
+    font-size: 80px;
+    margin-top: 0%;
+    position: absolute;
+    top: 0%;
+    animation: bodycare 3s infinite;
+}
+.head2 h2{
+    margin-top: 0%;
+    position: absolute;
+    top: 6%;
+    animation: bodycare2 3s infinite;
+}
+
+@keyframes bodycare {
+    0%{
+        top: -100%;
+    }
+    50%{
+        top: 3%;
+    }
+
+}
+
+@keyframes bodycare2 {
+    0%{
+        bottom: -100%;
+    }
+    50%{
+        top: 3%;
+    }
+
+}
+
+.slideshow{
+    height: 80px;
+    width: 100%;
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.slidewrap{
+    width: 300%;
+    height: 100%;
+    animation: slideshow 12s;
+    animation-iteration-count: infinite;
+}
+
+.slidewrap div{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+}
+
+.one, .two, .three{
+    padding-top: 5px;
+    text-align: center;
+}
+
+.one{
+    background-color:#dcc865;
+}
+
+.two{
+    background-color: #7f8000;
+}
+
+.three{
+    background-color: white;
+}
+
+@keyframes slideshow{
+    0%{
+        margin-left: 0%;
+    }
+
+    50%{
+        margin-left: -100%;
+    }
+
+    100%{
+        margin-left: -200%;
+    }
+    
+}
+
+.heroimage{
+    height: 900px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+.heroimage img{
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.child{
+    height: 250px;
+    width: 500px;
+    background-color: gray;
+    border: 2px solid white;
+    position: absolute;
+    left: 10%;
+    bottom: 50%;
+    box-sizing: border-box;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: larger;
+    
+}
+
+.block1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    height: 700px;
+    width: 100%;
+    padding: 2%;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+
+.heroimage2{
+    height: 100%;
+    width: 50%;
+    position: relative;
+    box-sizing: border-box;
+    background-image: url(flowerput.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.gradient{
+    background:linear-gradient(to right top, rgb(255, 255, 255,0.2), rgba(64, 61, 73, 0.52));
+    height: 100%;
+    width: 100%;
+}
+
+
+.child2{
+    height: 150px;
+    width: 400px;
+    border: #bab7a0 2px solid;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    color: white;
+    font-size: larger;
+    display: flex;
+    overflow: hidden;
+}
+
+.strengthen{
+    width: 50%;
+    background: linear-gradient(to right top, gray, #dcc865);
+    color: green;
+}
+
+.strengthen2{
+    padding: 5%;
+    font-size: larger;
+}
+
+.subhead{
+    font-family: cursive;
+    color: #7f8000;
+    margin-top: 5%;
+}
+
+hr{
+    border: #7f8000 solid 2px;
+}
+
+.bodylotions{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    text-align: center;
+    color: #7f8000;
+}
+
+.bodylotions a{
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+
+.bodylotions a:hover + .hide, .bodylotions a:hover{
+    display: inline;
+}
+
+
+.bodylotion1,.bodylotion2,.bodylotion3{
+    width: 33.33%;
+}
+.mdl1 {
+    /* width: 100%;
+    height: 100vh;
+    margin-top: 0%; */
+    opacity: 0;
+    position: fixed;
+    background-color: rgba(22, 20, 20, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    overflow: auto;
+}
+
+.mdl1:target {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.msgblock1 {
+    padding: 3%;
+    background-color: white;
+}
+
+.modalhead{
+    height: 50px;
+    width: 100%;
+    display: flex;
+}
+
+
+.modalheadtext{
+    height: 100%;
+    width: 95%;
+}
+
+.modalexit{
+    width: 5%;
+}
+
+.modalexit img{
+    height: 50px;
+}
+
+.modalwrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modalfoot{
+    background: lightgray;
+    padding: 2%;
+    height: 150px;
+    font-size: larger;
+}
+
+.modalfoot a{
+    margin: 2%;
+    color: black;
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 5px;
+}
+
+.modalfoot a:hover{
+    background-color: whitesmoke;
+}
+
+footer{
+    margin-top: 5%;
+    background-color: #232323;
+    color: whitesmoke;
+}
+
+footer img{
+    height: 80px;
+    margin-right: 2.5%;
+}
+
+
+.footwrap{
+    display: flex;
+    width: 100%;
+}
+.help, .account, .subscribe, .Membercard{
+    width: 25%;
+    text-align: center;
+
+}
+
+.footline{
+    border: whitesmoke solid 3px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.mediatags{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 2%;
+}
+
+.connections{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 2%;
+
+}
+
+.copyright{
+    margin-top: 5%;
+    text-align: center;
+}
+
