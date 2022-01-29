@@ -1,0 +1,54 @@
+-- Assignment 7 --
+
+-- Part A --
+
+-- select count(*) from actors
+-- union all
+-- select count(*) from directors
+-- union all
+-- select count(*) from movies
+-- union all
+-- select count(*) from movies_revenue
+-- union all
+-- select count(*) from movies_actors
+
+-- Part B -- 
+
+-- 1 --
+-- select movie_name, release_date from movies
+-- 2 --
+-- select first_name, last_name from directors
+-- 3 --
+-- select first_name, last_name, date_of_birth from actors
+-- where gender = 'M' and date_of_birth > '01-01-1970'
+-- 4 --
+-- select movie_name, movie_length, movie_lang from movies
+-- where movie_length > 90 and movie_lang = 'English'
+
+-- Part C --
+
+-- 1 --
+-- select movie_name, movie_lang from movies
+-- where movie_lang in ('English','Spanish','Korean')
+-- order by movie_lang
+-- 2 --
+-- select first_name, last_name, date_of_birth from actors
+-- where last_name like 'M%' and date_of_birth between '01-01-1940' and '12-31-1969' 
+-- 3 --
+-- select first_name, last_name, date_of_birth, nationality from directors
+-- where nationality in ('British','French','German') and date_of_birth between '01-01-1950' and '12-31-1980'
+
+-- Part D --
+
+-- 1 --
+-- select first_name, last_name, date_of_birth from directors
+-- ORDER BY date_of_birth 
+
+-- 2 --
+-- SELECT DISTINCT nationality from directors
+
+-- 3 --
+-- select first_name, last_name, gender,date_of_birth from actors
+-- where gender = 'F'
+-- order by date_of_birth DESC
+-- LIMIT 10
